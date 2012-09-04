@@ -24,7 +24,7 @@ Ext.define('MyApp.view.popUpImagen', {
         zIndex: 99999,
         autoDestroy: false,
         modal: false,
-        scrollable: 'both',
+        scrollable: true,
         hideAnimation: {
             type: 'fadeOut'
         },
@@ -39,8 +39,8 @@ Ext.define('MyApp.view.popUpImagen', {
                 xtype: 'button',
                 height: '5%',
                 itemId: 'mybutton3',
-                ui: 'action-round',
-                width: '20%',
+                ui: 'confirm-round',
+                width: '30%',
                 text: 'Volver'
             }
         ],
@@ -62,7 +62,11 @@ Ext.define('MyApp.view.popUpImagen', {
     },
 
     onMybutton3Tap: function(button, e, options) {
+        var contenedorGeneral = Ext.getCmp('contenedorGeneral');
+        var barraNavegacion = contenedorGeneral.getComponent('barraNavegacion');
+
         this.hide();
+        barraNavegacion.show();
     },
 
     onPopUpImagenHide: function(component, options) {

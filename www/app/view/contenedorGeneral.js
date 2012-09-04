@@ -141,15 +141,19 @@ Ext.define('MyApp.view.contenedorGeneral', {
 
                                     var comp = Ext.getCmp("popUpImagen");
 
+                                    var contenedorGeneral = Ext.getCmp('contenedorGeneral');
+
+
                                     if(comp === undefined){
                                         comp = Ext.create("MyApp.view.popUpImagen");  
                                     }
 
-                                    Ext.Viewport.add(comp);
+                                    contenedorGeneral.add(comp);
+                                    var barraNavegacion = contenedorGeneral.getComponent('barraNavegacion');
 
                                     comp.setData({imageSrc : e.target.getAttribute("src")});
-
                                     comp.show();
+                                    barraNavegacion.hide();
 
                                 },
                                 delegate: 'img'
