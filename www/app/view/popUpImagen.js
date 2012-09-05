@@ -24,7 +24,7 @@ Ext.define('MyApp.view.popUpImagen', {
         zIndex: 99999,
         autoDestroy: false,
         modal: false,
-        scrollable: 'true',
+        scrollable: 'both',
         hideAnimation: {
             type: 'fadeOut'
         },
