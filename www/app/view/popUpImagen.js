@@ -24,7 +24,7 @@ Ext.define('MyApp.view.popUpImagen', {
         zIndex: 99999,
         autoDestroy: false,
         modal: false,
-        scrollable: true,
+        scrollable: 'true',
         hideAnimation: {
             type: 'fadeOut'
         },
@@ -57,6 +57,10 @@ Ext.define('MyApp.view.popUpImagen', {
             {
                 fn: 'onPopUpImagenInitialize',
                 event: 'initialize'
+            },
+            {
+                fn: 'onPopUpImagenShow',
+                event: 'show'
             }
         ]
     },
@@ -87,6 +91,16 @@ Ext.define('MyApp.view.popUpImagen', {
 
             return false;
         });
+    },
+
+    onPopUpImagenShow: function(component, options) {
+
+        window.setTimeout(function(){
+            var contenedorGeneral = Ext.getCmp('contenedorGeneral');
+            var barraNavegacion = contenedorGeneral.getComponent('barraNavegacion');
+            barraNavegacion.hide();
+
+        },10);
     }
 
 });

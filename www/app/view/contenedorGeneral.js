@@ -132,7 +132,7 @@ Ext.define('MyApp.view.contenedorGeneral', {
                     animation: 'slide',
                     type: 'card'
                 },
-                scrollable: true,
+                scrollable: 'vertical',
                 listeners: [
                     {
                         fn: function(component, options) {
@@ -148,12 +148,14 @@ Ext.define('MyApp.view.contenedorGeneral', {
                                         comp = Ext.create("MyApp.view.popUpImagen");  
                                     }
 
-                                    contenedorGeneral.add(comp);
-                                    var barraNavegacion = contenedorGeneral.getComponent('barraNavegacion');
+                                    Ext.Viewport.add(comp);
+
+                                    //var barraNavegacion = contenedorGeneral.getComponent('barraNavegacion');
+                                    //barraNavegacion.hide();
 
                                     comp.setData({imageSrc : e.target.getAttribute("src")});
                                     comp.show();
-                                    barraNavegacion.hide();
+
 
                                 },
                                 delegate: 'img'

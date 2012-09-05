@@ -20,13 +20,13 @@ Ext.define('MyApp.model.informacionModel', {
     config: {
         fields: [
             {
-                mapping: 'titulo',
                 name: 'titulo',
+                mapping: 'titulo',
                 type: 'string'
             },
             {
-                mapping: 'contenido',
                 name: 'contenido',
+                mapping: 'contenido',
                 type: 'string'
             }
         ]
