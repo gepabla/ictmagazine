@@ -18,7 +18,7 @@
     <icon src="res/icon/cordova_bb_80.png"      width="80"  height="80"  gap:platform="blackberry" />
     <icon src="res/icon/cordova_ios_144.png"    width="144" height="144" gap:platform="ios" />
 
-    <gap:splash src="Default.png" />
+    <gap:splash src="splash.png" />
     <!-- <gap:splash src="res/screen/Default-Portrait.png" width="768" height="1004" gap:platform="ios" /> -->
 
 
