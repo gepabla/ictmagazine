@@ -43,6 +43,8 @@
 		30A0434914DC770100060A13 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30A0434614DC770100060A13 /* Localizable.strings */; };
 		30E1352710E2C1420031B30D /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* Cordova.plist */; };
 		30E5649213A7FCAF007403D8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30E5649113A7FCAF007403D8 /* CoreMedia.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BC633AD4161D10F5005C824E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BC633AD3161D10F5005C824E /* Default.png */; };
+		BC633AD6161D1115005C824E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC633AD5161D1115005C824E /* Default@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +121,8 @@
 		30E5649113A7FCAF007403D8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		32CA4F630368D1EE00C91783 /* ictmagazine-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ictmagazine-Prefix.pch"; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* ictmagazine-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ictmagazine-Info.plist"; path = "../ictmagazine-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		BC633AD3161D10F5005C824E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BC633AD5161D1115005C824E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +191,8 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				BC633AD5161D1115005C824E /* Default@2x.png */,
+				BC633AD3161D10F5005C824E /* Default.png */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -412,6 +418,8 @@
 				3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */,
 				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
 				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
+				BC633AD4161D10F5005C824E /* Default.png in Resources */,
+				BC633AD6161D1115005C824E /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
