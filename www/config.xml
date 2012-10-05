@@ -37,10 +37,9 @@
     <gap:splash src="res/screen/iphone_retina_landscape.png"     width="960"  height="640"  gap:platform="ios" />
     <gap:splash src="res/screen/iphone_retina_portrait.png"      width="640"  height="960"  gap:platform="ios" />
     <gap:splash src="res/screen/iphone_retina_portrait.png"      width="640"  height="960"  gap:platform="ios" />
-    <gap:splash src="res/screen/iphone_3gs_landscape.png"      width="480"  height="320"  gap:platform="ios" />
-    <gap:splash src="res/screen/iphone_3gs_portrait.png"       width="320"  height="480"  gap:platform="ios" />
     <gap:splash src="res/screen/windows_phone_portrait.png"      width="480"  height="800"  gap:platform="winphone" />
-
+    <gap:splash src="res/screen/Default~iphone.png" gap:platform="ios" />
+    <gap:splash src="res/screen/Default@2x~iphone.png"  gap:platform="ios" />
 
     <feature name="http://api.phonegap.com/1.0/device" />
 
