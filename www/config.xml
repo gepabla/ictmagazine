@@ -38,7 +38,9 @@
     <gap:splash src="res/screen/iphone_retina_portrait.png"      width="640"  height="960"  gap:platform="ios" />
     <gap:splash src="res/screen/iphone_retina_portrait.png"      width="640"  height="960"  gap:platform="ios" />
     <gap:splash src="res/screen/windows_phone_portrait.png"      width="480"  height="800"  gap:platform="winphone" />
-    
+    <gap:splash src="res/screen/Default~iphone.png" gap:platform="ios" />
+    <gap:splash src="res/screen/Default@2x~iphone.png"  gap:platform="ios" />
+
     <feature name="http://api.phonegap.com/1.0/device" />
 
     <preference name="phonegap-version" value="2.0.0" />
