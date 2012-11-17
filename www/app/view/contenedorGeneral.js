@@ -48,12 +48,7 @@ Ext.define('MyApp.view.contenedorGeneral', {
                             type: 'vbox'
                         },
                         scrollable: 'horizontal',
-                        items: [
-                            {
-                                xtype: 'passwordfield',
-                                itemId: 'claveTxt',
-                                style: '-webkit-border-radius : 10px;'
-                            },
+                        items: [                            
                             {
                                 xtype: 'button',
                                 itemId: 'ingresarBtn',
@@ -197,31 +192,11 @@ Ext.define('MyApp.view.contenedorGeneral', {
     },
 
     onIngresarBtnTap: function(button, e, options) {
-
-        var value = this.down('#claveTxt').getValue();  
-
-        if(value == "clave"){
+       
             this.animateActiveItem(1,{type:'slide',direction:'left'});
             this.down("#barraNavegacion").show();
             this.down("#volverBtn").hide(); 
-        }else{
-
-            var testPop = new Ext.Panel({
-                floating: true,
-                width: 200,
-                height: 200,
-                hideOnMaskTap: true,
-                styleHtmlContent: true,
-                html: 'Clave incorrecta',
-                centered : true,
-                cls: 'htmlcontent',
-                modal : true,
-                showAnimation : {type:'pop',direction : 'left'}
-            });
-            this.add(testPop);
-            testPop.show();
-
-        }
+       
     },
 
     onMenuMemoriaItemTap: function(dataview, index, target, record, e, options) {
